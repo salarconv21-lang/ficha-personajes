@@ -1,0 +1,213 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ficha de Personajes - Grupo 3</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2d3436;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #74b9ff;
+}
+
+/* HEADER */
+header {
+    margin-top: 70px;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.character {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.character img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2d3436;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#p1">Personaje 1</a>
+<a href="#p2">Personaje 2</a>
+<a href="#p3">Personaje 3</a>
+</nav>
+
+<header>
+<h1>Exploradores del Futuro</h1>
+<p>Grupo 3 - Ficha de Personajes</p>
+</header>
+
+<section id="p1">
+<div class="card">
+<h2>Luna Torres</h2>
+
+<div class="character">
+<img src="https://via.placeholder.com/200" alt="Foto Luna">
+
+<div>
+<p>
+Luna Torres es una ingeniera apasionada por la tecnología y la exploración espacial.
+Desde pequeña soñó con viajar a otros planetas. Gracias a su esfuerzo,
+se convirtió en experta en robótica y participa en misiones científicas.
+</p>
+
+<table>
+<tr><th>Edad</th><td>24 años</td></tr>
+<tr><th>Profesión</th><td>Ingeniera robótica</td></tr>
+<tr><th>País</th><td>Colombia</td></tr>
+</table>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="p2">
+<div class="card">
+<h2>Mateo Rivas</h2>
+
+<div class="character">
+<img src="https://via.placeholder.com/200" alt="Foto Mateo">
+
+<div>
+<p>
+Mateo Rivas es un biólogo marino que protege los océanos.
+Creció cerca del mar y trabaja en proyectos de conservación ambiental
+para enseñar la importancia de cuidar el planeta.
+</p>
+
+<table>
+<tr><th>Edad</th><td>29 años</td></tr>
+<tr><th>Profesión</th><td>Biólogo marino</td></tr>
+<tr><th>País</th><td>Chile</td></tr>
+</table>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="p3">
+<div class="card">
+<h2>Sofía Herrera</h2>
+
+<div class="character">
+<img src="https://via.placeholder.com/200" alt="Foto Sofía">
+
+<div>
+<p>
+Sofía Herrera es escritora y periodista.
+Le encanta viajar y contar historias que inspiran a otros.
+Su objetivo es motivar a los jóvenes a perseguir sus sueños.
+</p>
+
+<table>
+<tr><th>Edad</th><td>27 años</td></tr>
+<tr><th>Profesión</th><td>Escritora y periodista</td></tr>
+<tr><th>País</th><td>México</td></tr>
+</table>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Grupo 3 - Proyecto escolar</p>
+</footer>
+
+</body>
+</html>
